@@ -1,0 +1,64 @@
+<header class="d-flex flex-wrap justify-content-between align-items-center bg-white rounded shadow-sm mb-5 mt-5 p-3 animate__animated animate__fadeIn">
+    <div class="d-flex align-items-center mb-3">
+        <div class="logo me-3">
+            <img src="img/redarbor-logo.png" alt="Logo" class="img-fluid" style="max-height: 50px;">
+        </div>
+        <h1 class="h3 mb-0 titulo">Gestión de Empleados</h1>
+    </div>
+    <button id="logoutBtn" class="btn btn_cerrar_sesion mb-3" onclick="handleLogout()">Cerrar Sesión</button>
+</header>
+
+<div class="bg-white rounded shadow-sm mb-5 p-3 animate__animated animate__fadeIn">
+    <div class="row align-items-center">
+        <div class="col-12 col-md-6 mb-3 mb-md-0 d-flex flex-wrap">
+            <button class="btn btn_agregar me-2 mb-2" onclick="newEmpleado()">Agregar Empleado</button>
+            <button class="btn btn_eliminar mb-2" onclick="eliminarEmpleadosSeleccionados()">Eliminar Empleados</button>
+        </div>
+    </div>
+</div>
+
+<div class="row animate__animated animate__fadeIn">
+    <ul class="pagination mb-0 mt-3 d-flex justify-content-end align-items-end">
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous" onclick="loadNewPagEmpleados(-1)">
+                <span aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 20 20">
+                        <path fill="black" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z" />
+                    </svg>
+                </span>
+            </a>
+        </li>
+        <li class="page-item"><a class="page-link" id="totalEmpleados"></a></li>
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next" onclick="loadNewPagEmpleados(1)">
+                <span aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 20 20">
+                        <path fill="black" d="M7 1L5.6 2.5L13 10l-7.4 7.5L7 19l9-9z" />
+                    </svg>
+                </span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="row bg-white rounded shadow-sm mb-5 animate__animated animate__fadeIn">
+    <div class="table-responsive">
+        <table class="table table-hover table_empleados mt-3">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <input class="form-check-input" type="checkbox">
+                    </th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Fecha de Nacimiento</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Rol</th>
+                    <th scope="col">Editar</th>
+                    <th scope="col">Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="empleadosList"></tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+<div class="row d-flex justify-content-center animate__animated animate__fadeIn">
+    <div class="form-container">
+        <div class="row">
+            <div class="logoForm d-flex justify-content-center">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="d-flex justify-content-center">
+                <h2>Formulario de Empleado</h2>
+            </div>
+        </div>
+    
+        <div class="row d-flex justify-content-center">
+            <form id="empleadoForm">
+                <input type="hidden" id="idEmpleado">
+                <div class="form-group">
+                    <label for="surname">Nombres: *</label>
+                    <div class="input-group">
+                        <span class="input-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><g fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><circle cx="24" cy="11" r="7"/><path d="M4 41c0-8.837 8.059-16 18-16m9 17l10-10l-4-4l-10 10v4z"/></g></svg>
+                        </span>
+                        <input type="text" id="name" class="form-control" maxlength="100" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="surname">Apellidos: *</label>
+                    <div class="input-group">
+                        <span class="input-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><g fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><circle cx="24" cy="11" r="7"/><path d="M4 41c0-8.837 8.059-16 18-16m9 17l10-10l-4-4l-10 10v4z"/></g></svg>
+                        </span>
+                        <input type="text" id="surname" class="form-control" maxlength="100" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="dateOfBirth">Fecha de Nacimiento: *</label>
+                    <div class="input-group">   
+                        <span class="input-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="black" d="M5.673 0a.7.7 0 0 1 .7.7v1.309h7.517v-1.3a.7.7 0 0 1 1.4 0v1.3H18a2 2 0 0 1 2 1.999v13.993A2 2 0 0 1 18 20H2a2 2 0 0 1-2-1.999V4.008a2 2 0 0 1 2-1.999h2.973V.699a.7.7 0 0 1 .7-.699M1.4 7.742v10.259a.6.6 0 0 0 .6.6h16a.6.6 0 0 0 .6-.6V7.756zm5.267 6.877v1.666H5v-1.666zm4.166 0v1.666H9.167v-1.666zm4.167 0v1.666h-1.667v-1.666zm-8.333-3.977v1.666H5v-1.666zm4.166 0v1.666H9.167v-1.666zm4.167 0v1.666h-1.667v-1.666zM4.973 3.408H2a.6.6 0 0 0-.6.6v2.335l17.2.014V4.008a.6.6 0 0 0-.6-.6h-2.71v.929a.7.7 0 0 1-1.4 0v-.929H6.373v.92a.7.7 0 0 1-1.4 0z"/></svg>
+                        </span>                
+                        <input type="date" id="dateOfBirth" class="form-control" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: *</label>
+                    <div class="input-group">
+                        <span class="input-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="black" d="M4.616 19q-.691 0-1.153-.462T3 17.384V6.616q0-.691.463-1.153T4.615 5h14.77q.69 0 1.152.463T21 6.616v10.769q0 .69-.463 1.153T19.385 19zM12 12.116L4 6.885v10.5q0 .269.173.442t.443.173h14.769q.269 0 .442-.173t.173-.443v-10.5zM12 11l7.692-5H4.308zM4 6.885V6v11.385q0 .269.173.442t.443.173H4z"/></svg>
+                        </span> 
+                        <input type="email" id="email" class="form-control" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="roleId">Rol: *</label>
+                    <div class="input-group">
+                        <span class="input-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32"><path fill="black" d="M12 4a5 5 0 1 1-5 5a5 5 0 0 1 5-5m0-2a7 7 0 1 0 7 7a7 7 0 0 0-7-7m10 28h-2v-5a5 5 0 0 0-5-5H9a5 5 0 0 0-5 5v5H2v-5a7 7 0 0 1 7-7h6a7 7 0 0 1 7 7zm0-26h10v2H22zm0 5h10v2H22zm0 5h7v2h-7z"/></svg>
+                        </span>
+                        <select id="idRol" class="form-control custom-select" ></select>
+                    </div>
+                </div>
+                <div class="button-group d-flex justify-content-center mt-5"></div>
+            </form>
+        </div>
+    </div>
+</div>
